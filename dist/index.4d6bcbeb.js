@@ -918,7 +918,14 @@ const searchMovies = async (page)=>{
         store.state.message = "";
     }
     try {
-        const res = await fetch(`https://omdbapi.com?apikey=7035c60c&s=${store.state.searchText}&page=${page}`);
+        // const res = await fetch(`https://omdbapi.com?apikey=7035c60c&s=${store.state.searchText}&page=${page}`)
+        const res = await fetch("/api/movie", {
+            method: "POST",
+            body: JSON.stringify({
+                title: store.state.searchText,
+                page
+            })
+        });
         const { Search , totalResults , Response , Error  } = await res.json();
         if (Response === "True") {
             store.state.movies = [
@@ -935,7 +942,13 @@ const searchMovies = async (page)=>{
 };
 const getMovieDetails = async (id)=>{
     try {
-        const res = await fetch(`https://omdbapi.com?apikey=7035c60c&i=${id}&plot=full`);
+        // const res = await fetch(`https://omdbapi.com?apikey=7035c60c&i=${id}&plot=full`)
+        const res = await fetch("/api/movie", {
+            method: "POST",
+            body: JSON.stringify({
+                id: id
+            })
+        });
         store.state.movie = await res.json();
     } catch (error) {
         console.log("getMovieDetails error:", error);
@@ -1142,6 +1155,6 @@ class NotFound extends (0, _core.Component) {
 }
 exports.default = NotFound;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../core/core":"3SuZC"}]},["e11Rl","gLLPy"], "gLLPy", "parcelRequire6588")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../core/core":"3SuZC"}]},["e11Rl","gLLPy"], "gLLPy", "parcelRequiread88")
 
 //# sourceMappingURL=index.4d6bcbeb.js.map
