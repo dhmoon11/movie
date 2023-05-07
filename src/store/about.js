@@ -7,4 +7,4 @@ export default new Store({
   github: 'github.com/dhmoon11',
   number: '+82-10-1234-0000',
   repository: 'https://github.com/dhmoon11'
-})
+}) 

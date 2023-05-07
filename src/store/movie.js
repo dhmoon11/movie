@@ -26,7 +26,7 @@ export const searchMovies = async page => {
       method: 'POST',
       body: JSON.stringify({
         title: store.state.searchText,
-        page
+        page 
       })
     })
     const { Search, totalResults, Response, Error } = await res.json()

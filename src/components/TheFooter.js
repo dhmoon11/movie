@@ -11,7 +11,7 @@ export default class TheFooter extends Component {
     const { github, repository } = aboutStore.state
     this.el.innerHTML = /* html */ `
       <div>
-        <a
+        <a 
           href="#/"
           class="logo">
           <span>OMDBAPI</span>.COM

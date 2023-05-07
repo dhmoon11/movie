@@ -12,7 +12,7 @@ export default class MovieList extends Component {
       this.render()
     })
     movieStore.subscribe('message', () => {
-      this.render()
+      this.render() 
     })
   }
 

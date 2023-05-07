@@ -10,3 +10,4 @@ export default createRouter([
   { path: '#/about', component: About },
   { path: '.*', component: NotFound },
 ])
+ 

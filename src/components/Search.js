@@ -10,7 +10,7 @@ export default class Search extends Component {
         placeholder="Enter the movie title to search!"/>
       <button class="btn btn-primary">
         Search!
-      </button>
+      </button> 
     `
 
     const inputEl = this.el.querySelector('input')

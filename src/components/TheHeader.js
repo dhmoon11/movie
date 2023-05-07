@@ -33,7 +33,7 @@ export default class TheHeader extends Component {
         <span>OMDBAPI</span>.COM
       </a>
       <nav>
-        <ul>
+        <ul> 
           ${this.state.menus.map(menu => {
             const href = menu.href.split('?')[0]
             const hash = location.hash.split('?')[0]        

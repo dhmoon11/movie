@@ -7,7 +7,7 @@ export default class MovieListMore extends Component {
       tagName: 'button'
     })
     movieStore.subscribe('pageMax', () => {
-      const { page, pageMax } = movieStore.state
+      const { page, pageMax } = movieStore.state 
       pageMax > page 
         ? this.el.classList.remove('hide') 
         : this.el.classList.add('hide')

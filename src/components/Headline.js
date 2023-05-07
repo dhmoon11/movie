@@ -1,7 +1,7 @@
 import { Component } from '../core/core'
 
 export default class Headline extends Component {
-  render() {
+  render() { 
     this.el.classList.add('headline')
     this.el.innerHTML = /* html */ `
       <h1>

@@ -15,4 +15,4 @@ export default class About extends Component {
     <p class="number">${number}</p>
     `
   }
-}
+} 

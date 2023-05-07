@@ -17,6 +17,6 @@ export default class Home extends Component {
       search,
       movieList,
       movieListMore
-    )
+    ) 
   }
 }

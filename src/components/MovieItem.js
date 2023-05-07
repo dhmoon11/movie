@@ -4,7 +4,7 @@ export default class MovieItem extends Component {
   constructor(props){
     super({
       props,
-      tagName: 'a'
+      tagName: 'a' 
     })
   }
   render() {

@@ -48,7 +48,7 @@ export function createRouter(routes) {
   }
 }
 
-// Store //
+// Store // 
 export class Store {
   constructor(state) {
     this.state = {} 
